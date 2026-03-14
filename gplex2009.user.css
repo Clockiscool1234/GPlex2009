@@ -1,0 +1,255 @@
+/* ==UserStyle==
+@name           GPlex 2009
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    GPlex 2009 theme
+@author         Clockiscool1234
+==/UserStyle== */
+@-moz-document domain("www.google.com") {
+    #gp-gbar-inner {
+        background: none !important;
+        height: 24px !important;
+        border-bottom: 1px solid #c9d7f1;
+    }
+
+    .gp-gbar-link.active {
+        color: black !important;
+        text-decoration: none !important;
+        border-top-color: transparent !important;
+    }
+
+    #gp-gbar-inner .gp-gbar-link {
+        border-top: none !important;
+    }
+
+    .gp-gbar-link,
+    .gp-gbar-link:hover:not(.active) {
+        color: #00c !important;
+        text-decoration: underline !important;
+        background: none !important;
+        height: 24px !important;
+        padding-bottom: 1px !important;
+    }
+
+    .arrow {
+        border-top-color: #00c !important;
+    }
+
+    #ugf-hp-inner {
+        margin-top: 0px !important;
+    }
+
+    #ugf-hp {
+        margin-top: -28px;
+    }
+
+    #ugf-hp-search {
+        margin-top: 35px !important;
+    }
+
+    #ugf-search #ugf-searchbar {
+        border: none !important;
+        width: 515px;
+        margin-left: 27px !important;
+        background: none !important;
+    }
+
+    #ugf-search-value {
+        border: revert !important;
+        outline: revert !important;
+        background: revert !important;
+        width: 515px !important;
+        height: revert !important;
+        font: 17px arial, sans-serif !important;
+        vertical-align: bottom;
+    }
+
+    #ugf-hp-logo-inner {
+        background-image: url(https://www.google.com/intl/en_ALL/images/logo.gif);
+        width: 276px !important;
+        height: 110px !important;
+    }
+
+    #ugf-hp-logo #ugf-hp-logo-inner img {
+        visibility: hidden;
+    }
+
+    #ugf-search-predictions-container {
+        width: 515px !important;
+        top: 25px !important;
+        margin-left: 27px !important;
+    }
+
+    #ugf-searchbar::after {
+        content: "Advanced Search\aLanguage Tools";
+        white-space: pre;
+        text-decoration: underline;
+        color: #00c;
+        font-size: 10px;
+        top: 0;
+        position: absolute;
+        right: -97px;
+    }
+
+    #gp-gbar-settings-button {
+        display: none;
+    }
+
+    #ugf-hp-footer {
+        bottom: unset;
+        position: static;
+        background: none !important;
+        border: none !important;
+        width: max-content;
+        margin: 50px auto 0 auto;
+        flex-flow: row wrap;
+    }
+
+    #ugf-structured-hp-footer-left,
+    #ugf-structured-hp-footer-right {
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    #ugf-hp-footer,
+    .ugf-structured-hp-footer-link {
+        line-height: 15px !important;
+        color: #00c !important;
+        padding-left: 0;
+        text-decoration: none !important;
+        border-bottom: #00c solid 1px
+    }
+
+    #ugf-structured-hp-footer-left .ugf-structured-hp-footer-link:not(:last-child):after {
+        content: "-";
+        position: absolute;
+        color: black;
+        margin-left: 5px;
+    }
+
+    #ugf-structured-hp-footer-right .ugf-structured-hp-footer-link {
+        font-size: 10px !important;
+        line-height: 55px !important;
+    }
+
+    #ugf-structured-hp-footer-right .ugf-structured-hp-footer-link:not(:first-child) {
+        display: none;
+    }
+
+    #ugf-structured-hp-footer-right .ugf-structured-hp-footer-link:first-child {
+        margin-left: 28px;
+    }
+
+    #ugf-structured-hp-footer-right .ugf-structured-hp-footer-link:first-child:before {
+        content: "©2009 - ";
+        position: absolute;
+        margin-left: -40px;
+        color: black;
+    }
+
+    #ugf-structured-hp-footer-left .ugf-structured-hp-footer-link:not(:first-child) {
+        margin-left: 10px;
+    }
+    #ugf-topbar {
+        min-width: 0;
+    }
+}
+
+@-moz-document regexp(".*google.com/search.*"),
+regexp(".*google.com/gplex.*") {
+    #ugf-topbar {
+        background: none !important;
+        border: none !important;
+    }
+
+    #ugf-search-value,
+    #ugf-searchbar {
+        width: 303px !important;
+        height: 16px !important;
+        font-size: 13px !important;
+    }
+
+    #ugf-searchbar::after {
+        content: "Advanced Search\aPreferences";
+        right: -180px;
+    }
+
+
+    #ugf-search-results-header {
+        width: calc(100% - 13px);
+        left: 5px;
+        border-top: 1px solid #6b90da;
+        background: #f0f7f9;
+        height: 28px;
+        padding: 0;
+        top: 97px !important;
+    }
+    #ugf-search-results-header span {
+        font-size: 13px;
+        margin-left: auto;
+    }
+    #ugf-main-inner {
+        margin-top: 43px;
+    }
+    #ugf-left {
+        display: none;
+    }
+
+    #ugf-search-results-header:before {
+        content: "Web";
+        font-size: 13px;
+        font-weight: bold;
+        margin-left: 5px;
+    }
+
+    #ugf-main,
+    #ugf-footer {
+        width: 100%;
+    }
+
+    .gp-pagination .gp-image {
+        background-image: url("https://www.google.com/images/nav_logo3.png") !important;
+        width: 15px !important;
+        height: 26px !important;
+        background-position: -44px 0 !important;
+    }
+
+    #gp-pagination-prev .gp-image {
+        width: 19px !important;
+        background-position: -25px 0 !important;
+    }
+
+    #gp-pagination-prev.has-prev .gp-image {
+        width: 44px !important;
+        background-position: 0 0 !important;
+    }
+
+    .gp-pagination.active .gp-image {
+        background-position: -60px 0 !important;
+    }
+
+    #gp-pagination-next .gp-image {
+        width: 62px !important;
+        background-position: -76px 0px !important;
+    }
+
+    #gp-pagination-next span {
+        margin-left: 35px !important;
+    }
+
+
+    #ugf-logo-cont {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        background: url("https://www.google.com/images/nav_logo3.png");
+        background-position: 0px -26px;
+        width: 150px;
+        height: 49px;
+    }
+    #ugf-logo-cont img {
+        visibility: hidden;
+    }
+}
