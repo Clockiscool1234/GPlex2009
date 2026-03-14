@@ -4,6 +4,8 @@ Google 2009 Theme for GPlex
 <img src="1.PNG">
 <img src="2.PNG">
 
+FILE: [gplex2009.user.css](https://github.com/Clockiscool1234/GPlex2009/raw/refs/heads/main/gplex2009.user.css)
+
 ## REQUIRED:
 Gplex: https://greasyfork.org/en/scripts/492193-gplex-old-google-frontend
 
